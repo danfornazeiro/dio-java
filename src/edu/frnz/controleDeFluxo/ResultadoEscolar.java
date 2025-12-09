@@ -1,15 +1,10 @@
 package edu.frnz.controleDeFluxo;
 
 public class ResultadoEscolar {
-    public static void main (String[] args){
+    public static void main(String[] args) {
         double nota = 6.0;
-        if(nota >= 7.0)
-            System.out.println("Aluno Aprovado");
-        else if(nota > 5.0 && nota < 7.0) {
-            System.out.println("Prova de recuperção");
-        }
-        else
-            System.out.println("Aluno reprovado");
-    }
+        String resultado = nota > 7 ? "Aprovado" : nota >= 5 && nota <=7 ? "Recuperação" : "Reprovado";
+        System.out.println("A situação do aluno é: " + resultado);
 
+    }
 }
